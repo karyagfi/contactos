@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:plum;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color:rgb(73, 11, 131);
+}
+
+h3 {
+  color:darkred;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color:rgb(116, 0, 116);
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1em;
+}
+
+article {
+  border: 2px solid rgb(85, 189, 189);  
+  padding: 1em;
+  border-radius: 3em;
+}
+
+button {
+  background-color:crimson;
+  border-radius: 1em;
+  padding: 10px;
+  text-align: center;
+  color:white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:brown;
+}
