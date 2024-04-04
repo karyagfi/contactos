@@ -9,9 +9,15 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+  background-color:rgb(73, 11, 131);
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   text-align: center;
-  color:rgb(73, 11, 131);
+  color:white;
 }
 
 h3 {
@@ -38,7 +44,7 @@ article {
 }
 
 button {
-  background-color:crimson;
+  background-color: crimson;
   border-radius: 1em;
   padding: 10px;
   text-align: center;
@@ -48,4 +54,32 @@ button {
 
 button:hover {
   background-color:brown;
+}
+
+.box-content {
+  display: flex;
+  margin: 1em;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.input-search {
+  background-color: blanchedalmond;
+  outline: none;
+  border-radius: 1em;
+  border: none;
+  height: 50px;
+  width: 700px;
+}
+
+.btn-search {
+  background-color: burlywood;
+  height: 50px;
+  width: 300px;
+}
+
+.btn-all {
+  background-color: burlywood;
+  height: 60px;
+  text-overflow: ellipsis;
 }

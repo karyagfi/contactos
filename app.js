@@ -30,6 +30,8 @@ const contacts =  [
 ];
 
 const container = document.getElementById('container')
+const btnSearch = document.getElementById('btn-search')
+const inputSearch = document.getElementById('input-search')
 
 contacts.forEach(contact => {
   const html = `
@@ -51,3 +53,20 @@ function addContact(id) {
     alert(`Nombre: ${name}\nTeléfono: ${telefono}\nEmail: ${email}`);
   } 
 }
+
+addContact(contacts)
+
+btnSearch.addEventListener('click' , () => {
+  const text = inputSearch.value.tolowerCase()
+  const contactFiltered = contacts.filter(contact => contact.name.includes(text))
+
+  if (contactFiltered.length) {
+    addContact(contactFiltered)
+  } else {
+    contacts.innerHTML = '<h3>No se encontraron contactos con esos datos...</h3>'
+  }
+})
+
+btnAll.addEventListener('click' () => {
+  addContact(contacts)
+})
