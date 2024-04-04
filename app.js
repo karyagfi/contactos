@@ -58,15 +58,15 @@ addContact(contacts)
 
 btnSearch.addEventListener('click' , () => {
   const text = inputSearch.value.tolowerCase()
-  const contactFiltered = contacts.filter(contact => contact.name.includes(text))
+  const contactFiltered = contacts.filter(contact => contact.name.toLowerCase().includes(text))
 
-  if (contactFiltered.length) {
+  if (contactFiltered.length > 0) {
     addContact(contactFiltered)
   } else {
     contacts.innerHTML = '<h3>No se encontraron contactos con esos datos...</h3>'
   }
 })
 
-btnAll.addEventListener('click' () => {
+btnAll.addEventListener('click' , () => {
   addContact(contacts)
 })
