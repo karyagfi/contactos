@@ -50,6 +50,4 @@ function addContact(id) {
     const { name, telefono, email } = contactFinded;
     alert(`Nombre: ${name}\nTeléfono: ${telefono}\nEmail: ${email}`);
   } 
-
-  console.log(contacts);
 }
